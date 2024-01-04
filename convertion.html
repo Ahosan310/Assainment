@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    
+    <script>
+        function radian_to_Degree(radians){
+    return (radians*(180/Math.PI)).toFixed(2);
+    }
+
+ let radians = parseFloat(prompt("Enter a temperature(radian): "));
+ let degrees = radian_to_Degree(radians);
+
+document.getElementById("demo").innerHTML = "The conversion(radian to degree) is = "+" "+degrees+" "+"degree.";
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScriptFile</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        function isJavaScriptFile(fileName) {
+            return fileName.endsWith(".js");
+        }
+
+        var fileName1 = prompt("Enter a file name : ");
+
+        document.getElementById("demo").innerHTML = "'" + fileName1 + "'" + " is  a javascript file : " + isJavaScriptFile(fileName1) + ".";
+    </script>
+</body>
+
+</html>
